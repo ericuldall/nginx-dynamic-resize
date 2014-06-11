@@ -17,8 +17,8 @@ for serving static files (sysadmin win!)
 1. Nginx ```apt-get install nginx``` ```yum install nginx``` ```brew install nginx (probably..hopefully)``` or download at http://nginx.org/en/download.html
 2. Be enabled with the ```--with-http_image_filter_module``` - http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
 
-    *Cheat codes for apt-get users*
-    I was able to install everything necessary in one line with ```apt-get install nginx-extras```
+###### *Cheat codes for apt-get users*
+I was able to install everything necessary in one line with ```apt-get install nginx-extras```
 
 ## Caveats
 1. If images are larger than the *image_filter_buffer*, nginx will automatically throw a 415 Unsupported Media Type error (get used to that one)
