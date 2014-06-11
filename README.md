@@ -20,6 +20,10 @@ for serving static files (sysadmin win!)
 ###### *Cheat codes for apt-get users*
 I was able to install everything necessary in one line with ```apt-get install nginx-extras```
 
+## Usage
+Just call your images like this now: ```http://www.mysite.com/img/300/images/logos/site-logo.jpg```
+That would serve */images/logos/site-logo.jpg* with a max-width of 300px, no upsizing will occur.
+
 ## Caveats
 1. If images are larger than the *image_filter_buffer*, nginx will automatically throw a 415 Unsupported Media Type error (get used to that one)
 2. ```alias``` doesn't seem to like file names with spaces in them, I'm also getting 415 in that instance (let me know if you guys have a fix for that, still banging my head against the keyboard lkajlsdfk)
